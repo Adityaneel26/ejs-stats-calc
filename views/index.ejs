@@ -10,8 +10,29 @@
   </style>
 </head>
 <body>
+ <body>
   <div class="container">
     <h1>Stats Calculator</h1>
-  </div>
+
+    <form action="/calculate" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+      <label for="numbers" style="font-weight: bold;">Enter numbers (comma-separated):</label>
+      <input 
+        type="text" 
+        id="numbers" 
+        name="numbers" 
+        placeholder="e.g., 1, 5, 2, 8, 10" 
+        required
+        style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem;"
+      >
+      <button 
+        type="submit" 
+        style="padding: 10px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 1rem;"
+      >
+        Calculate
+      </button>
+    </form>
+    </div>
+</body>
+</html>
 </body>
 </html>
