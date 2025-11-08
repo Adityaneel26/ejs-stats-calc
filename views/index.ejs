@@ -31,6 +31,19 @@
         Calculate
       </button>
     </form>
+    </form>
+
+<% if (results) { %>
+  <div class="results" style="margin-top: 25px; padding-top: 20px; border-top: 1px solid #eee;">
+    <h2 style="text-align: center; margin-bottom: 15px;">Results</h2>
+    <p style="font-size: 1.1rem;"><strong>Input:</strong> <%= results.originalInput %></p>
+    <p style="font-size: 1.1rem;"><strong>Mean (Average):</strong> <%= results.mean %></p>
+    <p style="font-size: 1.1rem;"><strong>Median (Middle):</strong> <%= results.median %></p>
+  </div>
+<% } %>
+</div>
+</body>
+</html>
     </div>
 </body>
 </html>
